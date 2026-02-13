@@ -108,6 +108,75 @@
   }
 
   /*end fixed social*/
+
+  /* Mobile Specific Adjustments */
+@media (max-width: 767px) {
+  .footer-top {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  /* Center the logo and text */
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .footer-address-list {
+    padding: 0;
+    display: inline-block;
+    text-align: left; /* Keeps contact info readable */
+  }
+
+  /* Improve Social Icon Layout for touch */
+  #social-fixed {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px; /* Adds space between icons */
+    overflow: hidden;
+  }
+
+  #social-fixed a {
+    margin-right: 0; /* Clear desktop margin */
+    border-radius: 4px;
+  }
+
+  /* Disable hover tooltips on mobile as they interfere with clicking */
+  #social-fixed a span {
+    display: none !important;
+  }
+
+  /* Stack Footer Titles and Lists */
+  .footer-title {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .footer-list {
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer-list li {
+    padding: 8px 0;
+  }
+
+  /* Make links easier to tap */
+  .footer-link {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
+  }
+}
+
 </style>
 
 

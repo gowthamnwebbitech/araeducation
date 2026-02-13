@@ -16,7 +16,7 @@
     <link href="<?php echo url('');?>/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 	
 	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/icon" href="<?php echo url(''); ?>/public/frontend/assets/images/favicon.png" />
+	{{-- <link rel="shortcut icon" type="image/icon" href="<?php echo url(''); ?>/public/frontend/assets/images/favicon.png" /> --}}
 	<link rel="shortcut icon" type="image/png" href="<?php echo url('');?>/assets/images/favicon.png">
 	<link href="<?php echo url('');?>/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

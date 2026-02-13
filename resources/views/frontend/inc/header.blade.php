@@ -34,18 +34,25 @@
 
   <link rel="canonical" href="<?php echo URL::current(); ?>">
   
-  <script>
-    window.addEventListener('scroll', function loadGTM() {
-      var script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PZ1SBBHVNW';
-      document.head.appendChild(script);
-      window.removeEventListener('scroll', loadGTM);
-    });
-  </script>
-  <script>
-    gtag('event', 'conversion', { 'send_to': 'AW-876206963/5dixCMyi1sQBEPO256ED' });
-  </script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('event', 'conversion', { 'send_to': 'AW-876206963/5dixCMyi1sQBEPO256ED' });
+
+  window.addEventListener('scroll', function loadGTM() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PZ1SBBHVNW';
+    document.head.appendChild(script);
+    
+    window.removeEventListener('scroll', loadGTM);
+  }, { passive: true });
+</script>
+
   <script type="application/ld+json">
+
 {
   "@context": "https://schema.org",
   "@type": "Organization",
